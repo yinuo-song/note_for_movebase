@@ -15,3 +15,37 @@ Related stacks:
 
 For discussion, please check out the
 https://groups.google.com/group/ros-sig-navigation mailing list.
+
+### 关于ROS下输出
+
+* lauch启动节点时，加参数 output="screen"
+
+* 头文件
+
+* 打印方式有：
+
+  std::cout << "" ;
+
+  printf("") ;
+
+  ROS_INFO("") ;
+  
+### 关于spin 和 spinonce
+
+> https://blog.csdn.net/weixin_40215443/article/details/103793316
+
+spin是被动的一直接收信息，spinonce可以通过设置rate和sleep来控制接收的频率。
+
+```c++
+ros::Rate loop_rate(10);//接收频率
+while(ros::ok())
+{
+	// can add some function
+    ros::spinOnce();
+    loop_rate.sleep();
+}
+```
+
+### 关于节点的句柄设置
+
+>  https://blog.csdn.net/i_robots/article/details/107508346
