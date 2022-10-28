@@ -49,6 +49,9 @@ while(ros::ok())
 ### 关于节点的句柄设置
 
 >  https://blog.csdn.net/i_robots/article/details/107508346
+注意
+1.命名空间，不同命名空间下可能有同名的话题，比如“/persons”和“/move_base/topic”
+2.话题的类型，不同的消息类型会被存储在topic的不同区域 
 
 
 ### bind函数占位符
