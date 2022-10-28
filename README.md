@@ -49,3 +49,9 @@ while(ros::ok())
 ### 关于节点的句柄设置
 
 >  https://blog.csdn.net/i_robots/article/details/107508346
+
+
+### bind函数占位符
+
+
+>  https://www.cnblogs.com/houjun/p/4802190.html
