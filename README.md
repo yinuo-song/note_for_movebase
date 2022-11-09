@@ -58,3 +58,10 @@ while(ros::ok())
 
 
 >  https://www.cnblogs.com/houjun/p/4802190.html
+
+### 关于障碍物的设置文件
+
+>  https://blog.csdn.net/i_robots/article/details/107508346
+注意
+1.当一个障碍物都不添加的时候，会导致仿真环境的加载问题
+
