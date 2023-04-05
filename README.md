@@ -65,3 +65,4 @@ while(ros::ok())
 注意
 1.当一个障碍物都不添加的时候，会导致仿真环境的加载问题
 
+一些源码解读: https://blog.csdn.net/lclfans1983/article/details/106692805#commentBox
