@@ -1,7 +1,7 @@
 /*********************************************************************
 * Author: Eitan Marder-Eppstein
 * Developer：Arvin Yiiiinuo
-* Update date：2022.10.27
+* Update date：2023.04.17
 *********************************************************************/
 
 /*********************************************************************
@@ -12,6 +12,7 @@
      2) 去除了reconfigure及其对应的subscriber。      ------2020.5.7
      3) 进行了代码和注释的规范化。       ------2020.7.14
 * 3. yiiiinuo添加了中文注释。 ------2022.10.27 
+* 4. yiiiinuo关于怎么把鼠标点击时唤醒的目标点改成行人相关的位置,而不是鼠标点击的位置。 ------2023.04.17
 *********************************************************************/
 
 
@@ -47,7 +48,17 @@ make_plan_srv_: "make_plan", planService。这里面的req包含start和goal，r
 （make_plan_srv这个server是可以删除的，对主程序没有影响）
 clear_costmaps_src_: "clear_costmaps", clearCostmapsService。这里面没有利用req，resp也是空的，知识对地同进行了重置（全为0）。
 */
-
+/*
+更改目标点:
+0. 写消息类型需要的include
+move_base.cpp:
+1. 写接收器subscribe
+2. 写CallBack函数
+move_base.h:
+1. 声明接收器subscribe
+2. 声明CallBack函数
+3. 定义要用的全局变量
+*/
 
 
 
